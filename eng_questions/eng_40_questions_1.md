@@ -110,3 +110,91 @@ e) Configure a Multi-Site VPN.
 - **Configure DirectAcess on a Windows Server 2012 server VM:** DirectAccess is an alternative to VPN that provides remote access, but it is more complex to set up and manage, and is not specifically designed for Azure environments.
 
 - **Configure a Multi-Site VPN:** This is an extension of Site-to-Site VPN that connects multiple on-premises sites to a single Azure virtual network, but it is not intended for individual remote users.
+
+### Question 6
+
+You have been informed by your superiors of the company's intentions to automate server deployment to Azure. There is, however, some concern that administrative credentials could be uncovered during this process. You required to make sure that during the deployment, the administrative credentials are encrypted using a suitable Azure solution.
+
+Solution: You recommend the use of Azure Information Protection. Does the solution meet the goal?
+
+**a) No**
+
+b) Yes
+
+**Note:**
+- **Azure Information Protection** is a cloud-based solution that helps organizations classify, label, and protect documents and emails by applying labels. It is primarily used for protecting sensitive information within documents and emails, not specifically for encrypting administrative credentials during server deployment.
+- For encrypting administrative credentials during deployment, **Azure Key Vault** would be the appropriate solution. **Azure Key Vault** is designed to securely store and manage sensitive information, such as secrets, encryption keys, and certificates. By using Key Vault, you can ensure that administrative credentials are encrypted and securely accessed during the deployment process.
+
+### Question 7
+
+Choose the correct answer.
+
+When you are implementing a Software as a Service (SaaS) solution, you are responsible for:
+
+**a) Configuring the SaaS solution.**
+
+b) Defining scalability rules.
+
+c) Installing the SaaS solution.
+
+d) Configuring high availability.
+
+**Note:**
+- When you are implementing a Software as a Service (SaaS) solution, you are responsible for configuring the SaaS solution. Everything else is managed by the cloud provider. SaaS requires the least amount of management. The cloud provider is responsible for managing everything, and the end user just uses the software. Software as a service (SaaS) allows users to connect to and use cloud-based apps over the Internet. Common examples are email, calendaring and office tools (such as Microsoft Office 365).
+
+### Question 8
+
+You plan to migrate all the servers to Azure. You need to recommend a solution to ensure that some of the servers are available if a single Azure data center goes offline for an extended period. What should you include in the recommendation? 
+
+a) Elasticity
+
+**b) Fault tolerance**
+
+c) Scalability
+
+d) Low latency
+
+**Note:**
+- **Fault tolerance** is the ability of a system to continue operating properly in the event of a failure of some of its components. In the context of Azure, this means designing your deployment in such a way that if a single Azure data center goes offline, your services remain available.
+- To achieve fault tolerance in Azure, you would typically use features like **Availability Zones** or **Geo-redundant storage**, which distribute your resources across multiple data centers or regions. This ensures that your servers and services remain operational even if one data center experiences an outage.
+
+**The other options** are important cloud concepts, but they don't specifically address the need for availability in the event of a data center failure: 
+- **Elasticity:** Refers to the ability of a system to automatically scale up or down based on demand.
+- **Scalability:** Refers to the ability a system to handle increased load by adding resources.
+- **Low latency:** Refers to minimizing the delay in processing or transmitting data, but it doesn't relate to availability in case of a data center failure.
+
+### Question 9
+
+What are two characteristics of public cloud?
+
+**a) Metered pricing**
+
+b) Dedicated hardware
+
+**c) Self-service management**
+
+d) Unsecured connections
+
+e) Limited storage
+
+**Note:**
+- **Public Cloud** is a model of cloud computing where services are offered over the public internet and shared across organizations. Two key characteristics of the public cloud are:
+- **Metered Pricing:** Public cloud services typically operate on a pay- as-you-go model. Users are charged based on their consumption of resources such as compute power, storage, and bandwidth. This metered pricing allows for cost flexibility and scalability.
+- **Self-Service Management:** Public cloud platforms provide users with self-service portals or APIs, enabling them to manage, configure, and deploy resources on-demand without direct intervention from the service provider.
+
+### Question 10
+
+You have an on-premises network that contains 100 servers. You need to recommend a solution that provides additional resources to your users. The solution must minimize capital and operational expenditure costs. 
+
+What should you include in the recommendation?
+
+**a) A hybrid cloud**
+
+b) A complete migration to the public cloud
+
+c) An additional data center
+
+d) A private cloud
+
+**Note:**
+- A **hybrid cloud** solution allows you to combine on-premises infrastructure with resources in the public cloud. This approach enables you to extend your existing resources without the need for significant capital expenditure on additional hardware or data centers. It also helps to minimize operational costs by leveraging the scalability and flexibility of the public cloud when additional resources are needed.
