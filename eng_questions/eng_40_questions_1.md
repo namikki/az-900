@@ -334,3 +334,48 @@ d) Geo-redundancy
 - **Resource cost analysis:** This is not a feature of an Azure Virtual Network. Resource cost analysis is related to billing and monitoring, which is handled by other Azure services like Azure Cost Management.
 - **Packet inspection:** Packet inspection refers to the ability to inspect and filter network traffic, which is typically handled by Azure Firewall or Network Security Groups (NSGs), not by the Virtual Network itself.
 - **Geo-redundancy:** Geo-redundancy refers to the replication of data across different geographic regions for disaster recovery and high availability. This is a feature of Azure Storage, not Azure Virtual Network.
+
+### Question 20
+
+Which of the following enables Azure resources to be deployed close to users?
+
+a) Scalability
+
+b) High availability
+
+c) Elasticity
+
+**d) Geo-distribution**
+
+**Note:**
+- **Geo-distribution** enables Azure resources to be deployed close to users by distributing resources across multiple geographic locations. This helps to redice latency, improve performance, and provide a better user experience by ensuring that the resources are located closer to the end-users.
+
+### Question 21
+
+Match the cloud computing benefits to the appropriate descriptions. Each benefit may be used once, more than once, or not at all.
+
+**Benefits:** Disaster recovery, Geo-distribution, Scalability, High availability
+
+- Increase the compute capacity of apps in the cloud: **Scalability**
+- Provide a continuous user experience with no apparent downtime: **High availability**
+- Ensure the users always have the best experience by deploying apps to all the regions where there are users: **Geo-distribution**
+
+### Question 22
+
+You need to identify the type of failure for which an Azure Availability Zone can be used to protect access to Azure services. What should you identify?
+
+a) a storage failure
+
+b) an Azure region failure
+
+c) a physical server failure
+
+**d) an Azure data center failure**
+
+**Note:**
+- **Azure Availability Zones** are specifically designed to protect against failures at the **data center level** within a single Azure region. Each Availability Zone is an independent data center with its own power, cooling, and networking. If one data center (Availability Zone) fails, services running in another Availability Zone in the same region will continue to function, ensuring high availability.
+
+**Other Options:**
+- **a physical server failure:** Azure Availability Sets are more relevant for protecting against physical server failures. An Availability Set ensures that VMs are distributed across multiple physical servers, racks, and storage units within a single data center. This approach minimizes the impact of a single server failure. However, Availability Zones offer more comprehensive protection, as they guard against entire data center failures rather than just server failures.
+- **an Azure region failure**: **Geo-redundancy or Azure paired regions** are used to protect against **Azure region failures**. If an entire Azure region fails (e.g., due to a natural disaster), geo-redundancy ensures that services can failover to a secondary region. Availability Zones, however, are within a single region and do not protect against region-wide failures.
+- **a storage failure**: **Azure Storage Redundancy** options, such as Locally Redundant Storage (LRS) or Geo-Redundant Storage (GRS), are designed to protect against **storage failures**. LRS replicates data within the same data center, while GRS replicates data across different regions. Availability Zones focus on broader infrastructure resilience rather than just storage.
