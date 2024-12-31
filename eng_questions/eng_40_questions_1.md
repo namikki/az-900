@@ -278,4 +278,59 @@ c) Adopt the cloud
 d) Make a plan
 
 **Note:**
+
 ![microsoft_cloud_adoption_framework_for_azure](/.img/caf-baseline-journey.png)
+
+### Question 16
+
+Drag and drop the words to their places:
+
+*Scalabity* *Agility* *Geo-Distribution*
+
+- Applications can be deployed, tested and launched rapidly: *Agility*
+- Applications and data can be deployed to multiple regions: *Geo-Distribution*
+- Resources can be provisioned dynamically to meet changing demands: *Scalabity*
+
+### Question 17
+
+You plan to use Azure to host two apps named App1 e App2. The apps must meet the following requirements:
+- You must be able to modify the code of App1.
+- Administrative effort to manage the operating system of App1 must be minimized.
+- App2 must run interactively with the operating system of the server.
+
+Which type of cloud service should you use for each app?
+
+- **App1:** PaaS
+- **App2:** IaaS
+
+### Question 18
+
+Which term represents the ability to increase the computing capacity of a virtual machine by adding memomry or CPUs.
+
+a) Agility
+
+b) Elasticity
+
+c) Horizontal scaling
+
+**d) Vertical scaling**
+
+### Question 19
+
+What is a feature of an Azure Virtual Network?
+
+**a) Isolation and segmentation**
+
+b) Packet inspection
+
+c) Resource cost analysis
+
+d) Geo-redundancy
+
+**Note:**
+- **Isolation and segmentation:** Azure Virtual Network (VNet) allows you to create isolated and segmented networks within the cloud. This feature enables you to control traffic flow, enforce security policies, and create isolated environments for different applications or services.
+
+**Why the other options are not correct:**
+- **Resource cost analysis:** This is not a feature of an Azure Virtual Network. Resource cost analysis is related to billing and monitoring, which is handled by other Azure services like Azure Cost Management.
+- **Packet inspection:** Packet inspection refers to the ability to inspect and filter network traffic, which is typically handled by Azure Firewall or Network Security Groups (NSGs), not by the Virtual Network itself.
+- **Geo-redundancy:** Geo-redundancy refers to the replication of data across different geographic regions for disaster recovery and high availability. This is a feature of Azure Storage, not Azure Virtual Network.
