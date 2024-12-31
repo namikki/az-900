@@ -278,4 +278,4 @@ c) Adopt the cloud
 d) Make a plan
 
 **Note:**
-![microsoft_cloud_adoption_framework_for_azure](/az-900/.img/caf-baseline-journey.png)
+![microsoft_cloud_adoption_framework_for_azure](/.img/caf-baseline-journey.png)
