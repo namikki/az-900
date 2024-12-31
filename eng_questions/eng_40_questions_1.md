@@ -198,3 +198,69 @@ d) A private cloud
 
 **Note:**
 - A **hybrid cloud** solution allows you to combine on-premises infrastructure with resources in the public cloud. This approach enables you to extend your existing resources without the need for significant capital expenditure on additional hardware or data centers. It also helps to minimize operational costs by leveraging the scalability and flexibility of the public cloud when additional resources are needed.
+
+### Question 11
+
+You have 1,000 virtual machines hosted on the Hyper-V hosts in a datacenter. You plan to migrate all the virtual machines to an Azure pay-as-you-go subscription. You need to identify which expenditure model to use for the planned Azure solution.
+
+Which expenditure model should you identify?
+
+a) Elastic
+
+**b) Operational**
+
+c) Capital
+
+d) Scalable
+
+**Note:**
+- When you migrate virtual machines to an Azure pay-as-you-go subscription, you are shifting from a capital expenditure (CapEx) model, where you invest in physical infrastructure, to an operational expenditure (OpEx) model. In the OpEx model, you pay for the resources you use on a recurring basis (e.g., monthly or annually), which includes costs for compute, storage, and other services. This model is associated with the flexibility of paying for what you use rather than upfront capital investment. 
+
+**The other options:**
+- **Elastic:** Refers to the ability to scale resources up or down based on demand.
+- **Scalable:** Refers to the capability of the system to handle growth.
+
+### Question 12
+
+Match the Azure services benefits to the correct descriptions.
+
+- A cloud service that remains available after a failure occurs: **Fault tolerance**
+- A cloud service that can be recovered after a failure occurs: **Disaster recovery**
+- A cloud service that perfomns quickly when demand increases: **Dynamic Scalability**
+- A cloud service that can be accessed quickly from the internet: **Low latency**
+
+### Question 13
+
+You plan to provision Infrastructure as a Service (IaaS) resources in Azure. Which resource is an example of IaaS?
+
+a) an Azure web app
+
+b) an Azure SQL database
+
+c) an Azure logic app
+
+**d) an Azure virtual machine**
+
+**Note:**
+- **Infrastructure as a Service (laaS)** provides virtualized computing resources over the cloud. With laas, you are responsible for managing the operating system, applications, and associated configurations, while the cloud provider manages the underlying hardware and networking resources.
+- An Azure virtual machine is a classic example of laas. You get a virtualized server environment where you can install and manage your own operating system and applications. 
+
+**The other options fall under different service models:**
+- **An Azure web app:** This is an example of **Platform as a Service (PaaS)**, where the underlying infrastructure is managed by Azure, and you only need to manage the application and data.
+- **An Azure logic app:** This is also an example of **Platform as a Service (PaaS)**, specifically used for building workflows that integrate apps and services.
+- **An Azure SQL database:** This is another example of **Plataform as a Service (PaaS)**, where the database engine is fully managed by Azure, and you focus on the data and schema.
+
+### Question 14
+
+You can assign a _____ to every Azure resource.
+
+a) Policy
+
+b) Blueprint
+
+c) Service endpoint
+
+**d) Lock**
+
+**Note:**
+- You can assign a policy to any scope that you have access to, such as a management group, subscription, or resource group. However, you cannot assign a policy directly to an individual resource. You can assign a lock on every Azure resource that you have access to. You can apply a lock at different levels of scope: subscription, resource group, or individual resource.
