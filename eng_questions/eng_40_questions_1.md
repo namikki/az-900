@@ -264,3 +264,18 @@ c) Service endpoint
 
 **Note:**
 - You can assign a policy to any scope that you have access to, such as a management group, subscription, or resource group. However, you cannot assign a policy directly to an individual resource. You can assign a lock on every Azure resource that you have access to. You can apply a lock at different levels of scope: subscription, resource group, or individual resource.
+
+### Question 15
+
+What is the first stage in the Microsoft Cloud Adoption Framework for Azure?
+
+**a) Define your strategy**
+
+b) Ready your organization
+
+c) Adopt the cloud
+
+d) Make a plan
+
+**Note:**
+![microsoft_cloud_adoption_framework_for_azure](/az-900/.img/caf-baseline-journey.png)
