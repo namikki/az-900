@@ -457,3 +457,68 @@ d) No change is needed
 
 ### Question 27
 
+Your company plans to migrate to Azure. The company has several departments. All the Azure resources used by each department will be managed by a department administrator. What are two possible techniques to segment Azure for the departments?
+
+a) multiple Azure Active Directory (Azure AD) directories
+
+**b) multiple resource groups**
+
+**c) multiple subscriptions**
+
+d) multiple regions
+
+**Note:**
+- **Multiple subscriptions:** Each department can be assigned its own Azure subscription, which allows complete isolation of resources, billing, and management. This way, department administrators can manage their own resources without affecting others.
+- **Multiple resource groups:** Within a single subscription, you can create multiple resource groups, each of which can be dedicated to a different department. Resource groups allow for organizing and managing resources, including access control and cost management.
+
+**Other options:**
+- **Multiple Azure Active Directory (Azure AD) directories:** While Azure AD directories provide identity and access management, they are not typically used to segment resources for different departments. It's more about organizing users and applications across the entire organization. 
+- **Multiple regions:** Regions are geographic locations where Azure services are hosted, and they are used for redundancy, compliance, and performance. They are not typically used for department-level segmentation.
+
+### Question 28
+
+For each of the following statements, select Yes if the statements is true. Otherwise, select No.
+
+- A single Microsoft account can be used to manage multiple Azure subscriptions: **Yes**
+- Two Azure subscriptions can be merged into a single subscription: **No**
+- A company can use resources from multiple subscriptions: **Yes**
+
+### Question 29
+
+To complete the sentence, select the appropriate option in the answer area.
+
+- You have several virtual machines in an Azure subscription. You create a new subscription.
+
+a) The virtual machines cannot be moved to the new subscription.
+
+**b) The virtual machines can be moved to the new subscription.**
+
+c) The virtual machines can be moved to the new subscription only if they are all in the same resource group.
+
+d) The virtual machines can be moved to the new subscription only if they run Windows Server 2016.
+
+**Note:**
+- **You can move a VM and its associated resources to a different subscription** by using the **Azure portal**. Moving between subscriptions can be handy if you originally created a VM in a personal subscription and now want to move it to your company's subscription to continue your work. You do not need to start the VM in order to move it and it should continue to run during the move.
+
+### Question 30
+
+You have an Azure environment that contains multiple Azure virtual machines. You plan to implement a solution that enables the client computers on your on-premises network to communicate to the Azure virtual machines. You need to recommend which Azure resources must be created for the planned solution. Which two Azure resources should you include in the recommendation?
+
+**a) a virtual network gateway**
+
+b) a load balancer
+
+c) an application gateway
+
+d) a virtual network
+
+**e) a gateway subnet**
+
+**Note:**
+- **Virtual Network Gateway:** A virtual network gateway is necessary to establish a VPN connection between the on-premises network and the Azure virtual network. It facilitates secure communication by acting as the gateway through which traffic passes when connecting on-premises resources with Azure.
+- **Gatewat subnet:** A gateway subnet is required to host the virtual network gateway. It is a dedicated subnet in your Azure virtual network specifically for the gateway.
+
+**Other options:**
+- **A load balancer:** A load balancer is used for distributing traffic among virtual machines in Azure, not for connecting on-premises networks to Azure.
+- **An application gateway:** An application gateway is a Layer 7 load balancer used for HTTP/HTTPS traffic management, not for establishing connections between on-premises and Azure.
+- **A virtual network:** While a virtual network is necessary, it is implied in the question that the virtual machines already reside in a virtual network. You do not need to create a new one for this solution.
