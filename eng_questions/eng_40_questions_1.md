@@ -379,3 +379,81 @@ c) a physical server failure
 - **a physical server failure:** Azure Availability Sets are more relevant for protecting against physical server failures. An Availability Set ensures that VMs are distributed across multiple physical servers, racks, and storage units within a single data center. This approach minimizes the impact of a single server failure. However, Availability Zones offer more comprehensive protection, as they guard against entire data center failures rather than just server failures.
 - **an Azure region failure**: **Geo-redundancy or Azure paired regions** are used to protect against **Azure region failures**. If an entire Azure region fails (e.g., due to a natural disaster), geo-redundancy ensures that services can failover to a secondary region. Availability Zones, however, are within a single region and do not protect against region-wide failures.
 - **a storage failure**: **Azure Storage Redundancy** options, such as Locally Redundant Storage (LRS) or Geo-Redundant Storage (GRS), are designed to protect against **storage failures**. LRS replicates data within the same data center, while GRS replicates data across different regions. Availability Zones focus on broader infrastructure resilience rather than just storage.
+
+### Question 23
+
+You plan to extend your company's network to Azure. The network contains a VPN appliance that uses an IP address of 131.107.200.1. You need to create an Azure resource thath defines the VPN appliance in Azure. Which Azure resource should you create?
+
+a) NAT Gateways
+
+b) Azure Data Box Gateway
+
+c) Application Gateways
+
+d) On-premises Data Gateways
+
+e) Virtual Network Gateways
+
+f) Web Application Firewall Policies
+
+**g) Local Network Gateways**
+
+h) Azure Stack Edge/Data Box Gateway
+
+**Note:**
+- A Local Network Gateway is an object in Azure that represents your on- premise VPN device. A Virtual Network Gateway is the VPN object at the Azure end of the VPN. A 'connection' is what connects the Local Network Gateway and the Virtual Network Gateway to bring up the VPN. The local network gateway typically refers to your on-premises location. You give the site a name by which Azure can refer to it, then specify the IP address of the on-premises VPN device to which you will create a connection. You also specify the IP address prefixes that will be routed through the VPN gateway to the VPN device. The address prefixes you specify are the prefixes located on your on-premises network. If your on- premises network changes or you need to change the public IP address for the VPN device, you can easily update the values later.
+
+### Question 24
+
+You plan to deploy several Azure virtual machines. You need to ensure that the services running on the virtual machines are available if a single data center fails. 
+
+Solution: You deploy the virtual machines to a scale set. Does this meet the goal?
+
+a) Yes
+
+**b) No**
+
+**Note:**
+- Deploying virtual machines to a **scale set** alone does not ensure that the services running on them will remain available if a single data center fails. Scale sets help with load balancing and automatic scaling of virtual machines within the same data center or across multiple data centers, but they do not inherently provide high availability across data centers.
+- **Correct approach:** To ensure that your services are available even if a single data center fails, you should deploy the virtual machines across **Availability Zones** within a region. Availability Zones are physically separate locations within an Azure region, and deploying VMs across them can protect against data center failures.
+
+**Explanation of other options:**
+- **Availability Zones** would ensure high availability across data centers within the same region, which is necessary to meet the goal. 
+- **Scale sets** are beneficial for scaling out and managing a set of identical VMs but do not inherently provide redundancy across data centers.
+- Deploying VMs to an **Availability Set** would protect against rack-level failures within a single data center, but not a full data center failure.
+
+### Question 25
+
+For each of the following statements, select Yes if the statements is true. Otherwise, select No.
+
+- An Azure subscription can be associate with multiple Azure Active Directory (Azure AD) tenants: **No**
+- You can change the Azure Active Directory (Azure AD) tenant to which an Azure subscription is associated: **Yes**
+- When an Azure subscription expires, the associated Azure Active Directory (Azure AD) tenant is deleted automatically: **No**
+
+**Note:**
+- An Azure subscription can only be associated with a single Azure AD tenant at a time. However, you can have multiple subscriptions associated with the same Azure AD tenant.
+- Azure allows you to transfer a subscription to another Azure AD tenant if needed. This is done through the Azure portal by reassigning the subscription to a different directory.
+- The Azure AD tenant is not deleted when an Azure subscription expires. The Azure AD tenant exists independently of any subscription and can continue to be used or associated with other subscriptions.
+
+### Question 26
+
+Resource groups provide organizations with the ability to manage the compliance of Azure resources across multiple subscriptions. 
+
+Instructions: If the statement is correct, select "No change is needed". If the statement is incorrect, select the answer choice that makes the statement correct.
+
+**a) Management groups**
+
+b) Azure policies
+
+c) Azure App Service plans
+
+d) No change is needed
+
+**Note:**
+- **Management groups** provide organizations with the ability to manage the compliance, policies, and access control for Azure resources across multiple subscriptions. Resource group on the other hand, are containers for resources within a single subscription, and are not designed to manage compliance across multiple subscriptions.
+- **Resource groups** are used to organize and manage resources within a single subscription.
+- **Azure policies** help enforce compliance at the resource level, but they are not specific to managing across multiple subscriptions.
+- **Azure App Service** plans are used for managing the scaling and hosting of web apps, but they are unrelated to managing compliance across multiple subscriptions.
+
+### Question 27
+
