@@ -522,3 +522,148 @@ d) a virtual network
 - **A load balancer:** A load balancer is used for distributing traffic among virtual machines in Azure, not for connecting on-premises networks to Azure.
 - **An application gateway:** An application gateway is a Layer 7 load balancer used for HTTP/HTTPS traffic management, not for establishing connections between on-premises and Azure.
 - **A virtual network:** While a virtual network is necessary, it is implied in the question that the virtual machines already reside in a virtual network. You do not need to create a new one for this solution.
+
+### Question 31
+
+You attempt to create several managed Microsoft SQL Server instances in an Azure environment and receive a message that you must increase your Azure subscription limits. What should you do to increase the limits? 
+
+**a) Create a new support request**
+
+b) Upgrade your support plan
+
+c)Create a service health alert
+
+d) Modify an Azure policy
+
+**Note:**
+- When you need to increase your Azure subscription limits (quotas), the correct procedure is to create a support request with Azure. This is the process by which you can request an increase in the number of resources or services you are allowed to provision within your Azure subscription. Microsoft reviews the request and can approve an increase based on your requirements.
+
+**Other options:**
+- **Create a service health alert:** This option is used to monitor the health of Azure services and alert you to any outages or issues affecting the services you're using. It doesn't affect or change subscription limits.
+- **Upgrade your support plan:** While upgrading your support plan can provide you with faster response times and more comprehensive support options, it does not automatically increase your resource limits.
+- **Modify an Azure policy:** Azure policies are used to enforce organizational standards and assess compliance at scale. Modifying a policy won't change the subscription limits; it's used more for governance purposes.
+
+### Question 32
+
+For each of the following statements, select Yes if the statements is true. Otherwise, select No.
+
+- Each Azure subscription can contain multiple account administrators: **Yes**
+- Each Azure subscription can be managed by using a Microsoft account only: **No**
+- An Azure resource group contais multiple Azure subscriptions: **No**
+
+**Note:**
+- Each Azure subscription can have multiple account administrators.
+- We can create using a Microsoft account, but we can use AD.
+- Think of Azure resource group as a room and Azure subscription as a house. We have many rooms inside a house, but we cannot have a house inside the room.
+
+### Question 33
+
+For each of the following statements, select Yes if the statements is true. Otherwise, select No.
+
+- Availability zones can be implemented in all Azure regions: **No**
+- Only virtual machines that run Windows Server can be created in availability zones: **No**
+- Availability zones are used to replicate data and applications to multiple regions: **No**
+
+**Note:**
+- Not all Azure regions suppoort availability zones.
+- Availability zones can be used with Azure services, not just VMs.
+- Availability zones are unique physical locations within a single Azure region.
+
+### Question 34
+
+Your company plans to move several servers to Azure. You are evaluating which Azure services can be used to meet the compliance policy requirements. Which Azure solution should you recommend?
+
+a) one resource group for all the servers and a resource lock for FinServer 
+
+**b) a virtual network for FinServer and another virtual network for all the other servers**
+
+c) a resource group for FinServer and another resource group for all the other servers 
+
+d) a VPN for FinServer and a virtual network gateway for each other server
+
+**Note:**
+- This solution meets the compliance policy requirement by placing FinServer on a separate network segment. A virtual network (VNet) in Azure is a logical isolation of the Azure cloud dedicated to your subscription, which ensures that resources can only communicate with each other if they are in the same VNet or are connected via VNet peering.
+
+**Other options:**
+- **a resource group for FinServer and another resource group for all the other servers:** Resource groups are used for organizing and managing Azure resources, but they do not provide network isolation. All resources in different resource groups can still communicate over the same network unless specifically restricted.
+- **a VPN for FinServer and a virtual network gateway for each other server:** A VPN is used for connecting Azure virtual networks with on-premises networks securely over the internet, but it does not inherently provide network segmentation within Azure.
+
+### Question 35
+
+Which service enables cloud architects and central information technology groups to define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements? 
+
+**a) Azure Blueprints**
+
+b) Azure Monitor
+
+c) Compliance Manager
+
+d) Azure Advisor
+
+**Note:**
+- Azure Blueprints enables cloud architects and central IT groups to define a repeatable set of Azure resources that adheres to an organization's standards, patterns, and requirements. It allows for the creation of environments that comply with organizational policies by bundling together Resource Manager templates, policy assignments, role assignments, and Resource Groups into a single package. This helps to ensure that new deployments meet predefined standards and compliance requirements.
+
+**Other options:**
+- **Compliance Manager:** Compliance Manager is a tool in Microsoft 365 that helps organizations manage regulatory compliance activities related to Microsoft cloud services. It is not specifically designed for defining or deploying Azure resources.
+- **Azure Monitor:** Azure Monitor is a service that provides full-stack monitoring and visibility across applications and infrastructure. It is used for monitoring the performance and health of Azure resources, not for defining or deploying them.
+- **Azure Advisor:** Azure Advisor is a personalized cloud consultant that helps you follow best practices to optimize your Azure deployments. It provides recommendations for high availability, security, performance, and cost, but it does not define or deploy Azure resources like Azure Blueprints does.
+
+### Question 36
+
+Your business intends to use Azure to deploy an Artificial Intelligence (AI) solution. How should the business develop, test, and implement predictive analytics solutions?
+
+a) Azure Logics Apps
+
+b) Azure Batch
+
+**c) Azure Machine Learning Designer**
+
+d) Azure Cosmos DB
+
+**Note:**
+- **Azure Machine Learning Designer** is a visual, drag-and-drop interface in Azure Machine Learning that allows data scientists and developers to develop, test, and implement predictive analytics solutions. It enables users to create machine learning models, train them, and deploy them without writing extensive code. This tool is specifically designed for building Al and machine learning solutions, making it the most appropriate choice for developing predictive analytics solutions.
+
+**Other options:**
+- **Azure Batch** is a service that enables large-scale parallel and high- performance computing applications. It is used for running large-scale parallel jobs efficiently in the cloud, but it is not designed specifically for developing, testing, or implementing Al or predictive analytics solutions. 
+- **Azure Cosmos DB** is a globally distributed, multi-model database service designed for building highly responsive, scalable applications. While it can be used to store and retrieve data, it is not used for developing predictive analytics solutions. 
+- **Azure Logic Apps** is a cloud service that helps you automate workflows and integrate apps, data, services, and systems. It is used for creating automated workflows but is not designed for developing or deploying Al or predictive analytics solutions.
+
+### Question 37
+
+A company is planning to set up a Microservices-based application on Azure. They want to use a service that could be used to orchestrate the deployment of container-based applications. Which of the following could be used for this purpose? 
+
+a) Azure Functions
+
+b) Azure SQL Database
+
+**c) Azure Kubernetes**
+
+d) Azure Logic Apps
+
+**Note:**
+- **Azure Kubernetes Service (AKS)** is a managed container orchestration service that automates the deployment, management, and scaling of containerized applications using Kubernetes. It is specifically designed for orchestrating container-based applications and is a perfect choice for a microservices-based architecture on Azure.
+
+**Other options:**
+- **Azure Functions** is a serverless compute service that allows you to run event-driven code without managing infrastructure. It is used for running small pieces of code or functions in response to events, but it is not used for orchestrating containerized applications.
+- **Azure Logic Apps** is a cloud service that helps automate workflows and integrate apps, data, services, and systems. It is not designed for orchestrating containerized applications but rather for automating workflows.
+- **Azure SQL Database** is a fully managed relational database service in the cloud. While it is a database service, it is not used for orchestrating or deploying container-based applications.
+
+### Question 38
+
+A newly established company created the following resources using a pay-as-you-go Azure subscription. Azure Kubernetes and Azure Storage.  Account The Azure Kubernetes service belongs to which of the following deployment models? 
+
+**a) Platform as a Service**
+
+b) Hardware as a Service
+
+c) Infrastructure as a Service
+
+d) Software as a Service
+
+**Note:**
+- Azure Kubernetes Service (AKS) is a managed Kubernetes service, which means that Azure takes care of the underlying infrastructure, including the setup and management of the Kubernetes control plane and nodes. This makes AKS a Platform as a Service (PaaS) offering, as it provides a platform for deploying and managing containerized applications without having to manage the underlying infrastructure manually.
+
+**Other options:**
+- **Hardware as a Service (HaaS):** Haas typically refers to leasing physical hardware, which is not applicable to AKS, as AKS is a cloud service that abstracts away the physical hardware.
+- **Infrastructure as a Service (IaaS):** IaaS refers to services that provide virtualized computing resources over the internet, such as virtual machines and storage. While AKS does involve infrastructure, it abstracts the infrastructure management, making it a PaaS rather than a pure IaaS service.
+- **Software as a Service (SaaS):** SaaS refers to software that is centrally hosted and accessed via the internet (e.g., Microsoft Office 365). AKS is not a SaaS offering, as it provides a platform for deploying and managing applications rather than being an application itself.
